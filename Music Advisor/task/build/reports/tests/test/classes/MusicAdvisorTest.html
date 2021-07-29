@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class MusicAdvisorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class MusicAdvisorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; MusicAdvisorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">11.060s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="start"></a>
+<h3 class="failures">start</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Wrong answer in test #2
+
+Something wrong with showing categories and pages
+
+Please find below the output of your program during this failed test.
+Note that the '&gt;' character indicates the beginning of the input line.
+
+---
+
+Arguments: -access http://127.0.0.1:45678 -resource http://127.0.0.1:56789 -page 1
+
+&gt; auth
+use this link to request the access code:
+http://127.0.0.1:45678/authorize?client_id=eda2fc1315e64971a484eb1f8ff1801a&amp;redirect_uri=http://localhost:8080&amp;response_type=code
+waiting for code...
+Tester: making requests to redirect uri: http://localhost:8080
+Tester: done request 1: Authorization code not found. Try again.
+Tester: done request 2: Authorization code not found. Try again.
+code received
+Tester: done request 3: Got the code. Return back to your program.
+Making http request for access_token...
+Success!
+&gt; categories
+jsonObject {&quot;categories&quot;:{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories?offset=0&amp;limit=20&quot;,&quot;items&quot;:[{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/toplists&quot;,&quot;icons&quot;:[{&quot;height&quot;:275,&quot;url&quot;:&quot;https://datsnxq1rwndn.cloudfront.net/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg&quot;,&quot;width&quot;:275}],&quot;id&quot;:&quot;toplists&quot;,&quot;name&quot;:&quot;Top Lists&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/mood&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://datsnxq1rwndn.cloudfront.net/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg&quot;,&quot;width&quot;:274}],&quot;id&quot;:&quot;mood&quot;,&quot;name&quot;:&quot;Super Mood&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/party&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://datsnxq1rwndn.cloudfront.net/media/derived/party-274x274_73d1907a7371c3bb96a288390a96ee27_0_0_274_274.jpg&quot;,&quot;width&quot;:274}],&quot;id&quot;:&quot;party&quot;,&quot;name&quot;:&quot;Party Time&quot;}],&quot;limit&quot;:20,&quot;next&quot;:null,&quot;offset&quot;:0,&quot;previous&quot;:null,&quot;total&quot;:3}}
+Top Lists
+Super Mood
+Party Time
+---PAGE 1 OF 3---
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">start</td>
+<td class="failures">11.060s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[1;31m
+Start test 1?[0m
+&gt; auth
+use this link to request the access code:
+http://127.0.0.1:45678/authorize?client_id=eda2fc1315e64971a484eb1f8ff1801a&amp;redirect_uri=http://localhost:8080&amp;response_type=code
+waiting for code...
+Tester: making requests to redirect uri: http://localhost:8080
+Tester: done request 1: Authorization code not found. Try again.
+Tester: done request 2: Authorization code not found. Try again.
+code received
+Tester: done request 3: Got the code. Return back to your program.
+Making http request for access_token...
+Success!
+&gt; exit
+?[1;31m
+Start test 2?[0m
+&gt; auth
+use this link to request the access code:
+http://127.0.0.1:45678/authorize?client_id=eda2fc1315e64971a484eb1f8ff1801a&amp;redirect_uri=http://localhost:8080&amp;response_type=code
+waiting for code...
+Tester: making requests to redirect uri: http://localhost:8080
+Tester: done request 1: Authorization code not found. Try again.
+Tester: done request 2: Authorization code not found. Try again.
+code received
+Tester: done request 3: Got the code. Return back to your program.
+Making http request for access_token...
+Success!
+&gt; categories
+jsonObject {&quot;categories&quot;:{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories?offset=0&amp;limit=20&quot;,&quot;items&quot;:[{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/toplists&quot;,&quot;icons&quot;:[{&quot;height&quot;:275,&quot;url&quot;:&quot;https://datsnxq1rwndn.cloudfront.net/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg&quot;,&quot;width&quot;:275}],&quot;id&quot;:&quot;toplists&quot;,&quot;name&quot;:&quot;Top Lists&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/mood&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://datsnxq1rwndn.cloudfront.net/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg&quot;,&quot;width&quot;:274}],&quot;id&quot;:&quot;mood&quot;,&quot;name&quot;:&quot;Super Mood&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/party&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://datsnxq1rwndn.cloudfront.net/media/derived/party-274x274_73d1907a7371c3bb96a288390a96ee27_0_0_274_274.jpg&quot;,&quot;width&quot;:274}],&quot;id&quot;:&quot;party&quot;,&quot;name&quot;:&quot;Party Time&quot;}],&quot;limit&quot;:20,&quot;next&quot;:null,&quot;offset&quot;:0,&quot;previous&quot;:null,&quot;total&quot;:3}}
+Top Lists
+Super Mood
+Party Time
+---PAGE 1 OF 3---
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at 5 июл. 2021 г., 12:40:05</p>
+</div>
+</div>
+</body>
+</html>
